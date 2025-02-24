@@ -1,0 +1,69 @@
+# Project information
+site_name: Llm Dataset Digest
+site_author: Fangning Zheng
+
+# Repository
+repo_url: https://dev.azure.com/TGSCloud/Datascience/_git/llm-dataset-digest
+
+# Copyright
+copyright: Copyright &copy; 2023 TGS
+
+# Configuration
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+  - mkdocstrings: # Automatic documentation from sources
+      handlers:
+        python:
+          paths: ["src"] # search packages in src
+          options:
+            docstring_style: google
+            docstring_section_style: spacy
+            merge_init_into_class: true
+            docstring_options:
+              ignore_init_summary: true
+            group_by_category: true
+            show_root_toc_entry: false
+
+# Also watch for changes in source code
+watch:
+  - src
+
+use_directory_urls: true # (optional) for better links without .html extension
+
+markdown_extensions:
+  - abbr # Abbreviations
+  - def_list # Definition list
+  - pymdownx.highlight # Code highlight
+  - pymdownx.snippets # Code snippets
+  - pymdownx.superfences # Code highlight
+  - pymdownx.inlinehilite # Inline code highlight
+  - mkdocs-click # Click CLI documentation
+  - attr_list # For mkdocs-click
