@@ -45,7 +45,7 @@ Parse the text frames in a PowerPoint file, store the text and its metadata into
 
 # Flowchart of Retrieval-Augmented Generative AI Chatbot
 
-![](media/flowchart.png =900x)
+![](https://github.com/Fangning-USC/llm-dataset-digest/blob/main/media/flowchart.png =900x)
 
 # Installation
 
@@ -90,11 +90,11 @@ $ streamlit run app_router_memory.py
 
 # Pseudocode of PowerPoints (ppt) Parsing
 
-![](media/ppt_parser_pseudocode.jpg =600x)
+![](https://github.com/Fangning-USC/llm-dataset-digest/blob/main/media/ppt_parser_pseudocode.jpg =600x)
 
 # Pseudocode of vector storing
 
-![](media/vs_pseudocode.png =600x)
+![](https://github.com/Fangning-USC/llm-dataset-digest/blob/main/media/vs_pseudocode.png =600x)
 
 # Contributing
 
